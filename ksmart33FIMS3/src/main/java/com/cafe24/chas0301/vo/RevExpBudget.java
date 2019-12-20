@@ -1,4 +1,4 @@
-package com.cafe24.chas0301.fims.vo;
+package com.cafe24.chas0301.vo;
 
 public class RevExpBudget {
 	private String fesrev_bud_cd; //모든축제세입세출예산관리코드

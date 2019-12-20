@@ -1,4 +1,4 @@
-package com.cafe24.chas0301.fims.vo;
+package com.cafe24.chas0301.vo;
 
 public class Contract {
 	private String fescon_man_cd; //모든축제계약관리코드
