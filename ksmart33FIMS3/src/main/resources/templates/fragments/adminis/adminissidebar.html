@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" >
+
+    <!--sidebar start-->
+    <aside>
+       <div th:fragment="adminisLeftmenuFragment" id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="/adminisview/adminisprofile/allprofile"><img src="/adminis/img/asugi.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">!총괄관리자</h5>
+          <li class="mt">
+            <a href="/adminisview/dashboard">
+              <i class="fa fa-dashboard"></i>
+              <span>!Dashboard</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>01.#운영관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#기본정책</a></li>
+              <li><a href="#">#관리정책</a></li>
+              <li><a href="#">#축제정책</a></li>
+              <li><a href="#">#예약정책</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>02.#회원관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#회원리스트</a></li>
+              <li><a href="#">#회원등록</a></li>
+              <li><a href="#">#회원가입 정책관리</a></li>
+              <li><a href="#">#가입승인/등급변경</a></li>
+              <li><a href="#">#회원 탈퇴/삭제관리 </a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>03.#행정기관관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">행정기관 리스트</a></li>
+              <li><a href="#">행정기관 등록</a></li>
+              <li><a href="#">#####</a></li>
+              <li><a href="#">#####</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-tasks"></i>
+              <span>04.#공무원관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#공무원 리스트</a></li>
+              <li><a href="#">#공무원 등록</a></li>
+              <li><a href="#">#Form Validation</a></li>
+              <li><a href="#">#Contact Form</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>05.#거래처관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#거래처 관리</a></li>
+              <li><a href="#">#거래처 정산관리</a></li>
+              <li><a href="#">#세금계산서</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>06.#위원회관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#위원회 리스트</a></li>
+              <li><a href="#">#위원회 등록</a></li>
+              <li><a href="#">#Advanced Table</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>07.#축제관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#축제 리스트</a></li>
+              <li><a href="#">#축제 등록</a></li>
+              <li><a href="#">#####</a></li>
+              <li><a href="#">#####</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>08.#축제인적관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#축제인적 리스트</a></li>
+              <li><a href="#">#축제인적 등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>09.!모든계약관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/adminisview/festival_contract/privateContractView">!계약리스트</a></li>
+              <li><a href="#">#계약등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>10.!축제예산관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/adminisview/festival_budget/revenueBudgetView">!세입예산관리</a></li>
+              <li><a href="/adminisview/festival_budget/expenditureBudgetView">!세출예산관리</a></li>
+              <li><a href="/adminisview/festival_budget/revenueExecutionView">!세입집행관리</a></li>
+              <li><a href="/adminisview/festival_budget/expenditureExecutionView">!세출집행관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>11.#게시판관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#게시판 리스트</a></li>
+              <li><a href="#">#게시판 등록</a></li>
+              <li><a href="#">#게시글 관리</a></li>
+              <li><a href="#">#FAQ 관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>12.#평가관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#심사리스트</a></li>
+              <li><a href="#">#심사등록</a></li>
+              <li><a href="#">#평가리스트</a></li>
+              <li><a href="#">#평가등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>13.!통계관리</span>
+              </a>
+            <ul class="sub">
+              <li><a href="/adminisview/statistics/accountAnalysisView">!거래처분석</a></li>
+              <li><a href="/adminisview/statistics/festivalAnalysisView">!축제분석</a></li>
+              <li><a href="/adminisview/statistics/festivalBudgetAnalysisView">!축제예산분석</a></li>
+              <li><a href="/adminisview/statistics/festivalExecutionAnalysisView">!축제집행액분석</a></li>
+              <li><a href="/adminisview/statistics/festivalEvaluationAnalysisView">!축제평가분석</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-map-marker"></i>
+              <span>#Google Maps </span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+</html>

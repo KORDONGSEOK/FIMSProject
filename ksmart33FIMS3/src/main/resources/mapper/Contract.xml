@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.cafe24.chas0301.fims.contract.PrivateContractMapper.java">
+
+	<!-- 모든 거래처 관리 -->
+	 <select id="" resultType="com.cafe24.chas0301.fims.vo.Contract">
+	 	SELECT
+			*
+		FROM 
+			Fes_Con_Man
+	 </select>
+
+</mapper>
