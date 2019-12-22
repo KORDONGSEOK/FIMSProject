@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout/adminis/adminisdefault}">
+
+<th:block layout:fragment="adminisTitle">
+	<title>승인된거래처리스트</title>
+</th:block>
+	<th:block layout:fragment="adminisMainContents">
+        <h3><i class="fa fa-angle-right"></i>06.거래처관리_민->승인된거래처리스트</h3>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-panel">
+              <h4><i class="fa fa-angle-right"></i>승인된거래처리스트</h4>
+              <hr>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td>거래처별승인업종코드</td>
+                    <td>모든 행정기관코드</td>
+                    <td>모든 지역 시군코드</td>
+                    <td>전국지역코드</td>
+                    <td>위원회코드</td>
+                    <td>거래처명</td>
+                    <td>사업자분류</td>
+                    <td>수정</td>
+                    <td>삭제</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>값1</td>
+                    <td>값1</td>
+                    <td>값1</td>
+                    <td>값1</td>
+                    <td>값1</td>
+                    <td>값1</td>
+                    <td>값1</td>
+                    <td><a th:href="@{/updateApprovalAccount}">수정</a></td>
+                    <td><a th:href="@{/approvalAccountView}">삭제</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+	</th:block>
+<th:block layout:fragment="adminisscript">
+<th:block th:include="fragments/adminis/adminisscript"></th:block>
+
+</th:block>
+</html>

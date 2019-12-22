@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" >
+
+    <!--sidebar start-->
+    <aside>
+       <div th:fragment="adminisLeftmenuFragment" id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="/adminisview/adminisprofile/allprofile"><img src="/adminis/img/asugi.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">!총괄관리자</h5>
+          <li class="mt">
+            <a href="/adminisview/dashboard">
+              <i class="fa fa-dashboard"></i>
+              <span>!01.Dashboard</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>02.#운영관리_연</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#시스템 관리자 계정 등록</a></li>
+              <li><a href="#">#시스템 관리자 계정 조회</a></li>
+              <li><a href="#">#공통코드 등록</a></li>
+              <li><a href="#">#공통코드 조회</a></li>
+              <li><a href="#">#공지사항 등록</a></li>
+              <li><a href="#">#공지사항 조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>03.#행정기관관리_연</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#전국 지역 및 시군 등록</a></li>
+              <li><a href="#">#전국 지역 및 시군 조회</a></li>
+              <li><a href="#">#행정기관 등록</a></li>
+              <li><a href="#">#행정기관 조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>04.#회원관리_연</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#회원 권한 등록</a></li>
+              <li><a href="#">#회원 권한 조회</a></li>
+              <li><a href="#">#권한별 계정 부여</a></li>
+              <li><a href="#">#부여된 계정 조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-tasks"></i>
+              <span>05.#공무원관리_연</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#행정기관별 부서 등록</a></li>
+              <li><a href="#">#행정기관별 부저 조회</a></li>
+              <li><a href="#">#부서별 직원 등록</a></li>
+              <li><a href="#">#부서별 직원 조회</a></li>
+              <li><a href="#">#접수된 위원회 조회</a></li>
+              <li><a href="#">#위원회 승인</a></li>
+              <li><a href="#">#위원회 승인 조회</a></li>
+              <li><a href="#">#업무현황</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>06.#거래처 관리_민</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#모든거래처등록</a></li>
+              <li><a href="/adminisview/account/allAccountView">#모든거래처관리</a></li>
+              <li><a href="#">#승인된거래처등록</a></li>
+              <li><a href="#">#승인된거래처관리</a></li>
+              <li><a href="#">#거래처회원등록</a></li>
+              <li><a href="/adminisview/account/accountMemberView">#거래처회원관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>07.#위원회관리_민</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#위원회등록</a></li>
+              <li><a href="#">#위원회관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>08.#축제관리_연</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#축제 등록</a></li>
+              <li><a href="#">#축제 조회</a></li>
+              <li><a href="#">#축제별 담당자 등록</a></li>
+              <li><a href="#">#축제별 담당자 조회</a></li>
+              <li><a href="#">#축제별 입장료 및 수량 등록</a></li>
+              <li><a href="#">#축제별 입장료 및 수량 조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>09.#축제인적관리_영</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#축제업무분류리스트</a></li>
+              <li><a href="#">#축제업무분류등록</a></li>
+              <li><a href="#">#축제업무리스트</a></li>
+              <li><a href="#">#축제업무등록</a></li>
+              <li><a href="#">#축제인적리스트</a></li>
+              <li><a href="#">#축제인적등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>10.!축제홍보관리_정</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#월별타임테이블</a></li>
+              <li><a href="#">#홍보사업관리</a></li>
+              <li><a href="#">#홍보분류관리</a></li>
+              <li><a href="#">#홍보거래처 조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>11.!축제시설관리_영</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#모든시설분류조회</a></li>
+              <li><a href="#">#모든시설분류등록</a></li>
+              <li><a href="#">#보유시설리스트</a></li>
+              <li><a href="#">#보유시설등록</a></li>
+              <li><a href="#">#임시시설설치및철거리스트</a></li>
+              <li><a href="#">#임시시설설치및철거등록</a></li>
+              <li><a href="#">#시설안전점검유지보수리스트</a></li>
+              <li><a href="#">#시설안전점검유지보수등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>12.#축제예산관리_석</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#세입세출예산조회</a></li>
+              <li><a href="#">#세입세출예산등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>13.#축제계약괸리_석</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">#계약조회</a></li>
+              <li><a href="#">#계약등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>14.#축제모든물품관리_상,정</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#물품관리</a></li>
+              <li><a href="">#계약물품납품 내역관리</a></li>
+              <li><a href="">#보유물품 대여관련 세입관리</a></li>
+              <li><a href="">#축제관련물품입고관리</a></li>
+              <li><a href="">#축제관련물품출고관리</a></li>
+              <li><a href="">#물품분류관리</a></li>
+              <li><a href="">#물품거래처관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>15.#축제내프로그램관리_정</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#프로그램타임테이블</a></li>
+              <li><a href="">#프로그램 관리</a></li>
+              <li><a href="">#프로그램분류관리</a></li>
+              <li><a href="">#세부프로그램 조회</a></li>
+              <li><a href="">#프로그램 참가업체 조회</a></li>
+              <li><a href="">#프로그램 참가자 조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>16.#게시판관리_민</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#축제공고관리</a></li>
+              <li><a href="">#공지사항관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>17.#일정관리_정</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#일정확인</a></li>
+              <li><a href="">#일정세부조회</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>18.#심사관리_상,민</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#전체심사</a></li>
+              <li><a href="">#완료심사</a></li>
+              <li><a href="">#용역신청서관리</a></li>
+              <li><a href="">#부스신청서관리</a></li>
+              <li><a href="">#자원봉사신청서관리</a></li>
+              <li><a href="">#위원회신청서관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>19.#통계관리_석</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">!거래처분석</a></li>
+              <li><a href="">!축제분석</a></li>
+              <li><a href="">!축제예산분석</a></li>
+              <li><a href="">!축제집행액분석</a></li>
+              <li><a href="">!축제평가분석</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>20.#마이페이지_연</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#회원정보 수정</a></li>
+              <li><a href="">#비밀번호 변경</a></li>
+              <li><a href="">#탈퇴하기</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-comments-o"></i>
+              <span>21.#기본설정_보류</span>
+              </a>
+            <ul class="sub">
+              <li><a href="">#####</a></li>
+              <li><a href="">#####</a></li>
+              <li><a href="">#####</a></li>
+              <li><a href="">#####</a></li>
+              <li><a href="">#####</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-map-marker"></i>
+              <span>22.#Google Maps </span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+</html>

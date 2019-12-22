@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout/adminis/adminisdefault}">
+
+<th:block layout:fragment="adminisTitle">
+	<title>안전점검리스트</title>
+</th:block>
+	<th:block layout:fragment="adminisMainContents">
+		안전점검리스트
+			<style>
+			  table {
+			    width: 100%;
+			    border-top: 1px solid #444444;
+			    border-collapse: collapse;
+			  }
+			  th, td {
+			    border-bottom: 1px solid #444444;
+			    padding: 10px;
+			    text-align: center;
+			  }
+			  th {
+			    background-color: #bbdefb;
+			  }
+			  td /* {
+			    background-color: #e3f2fd;
+			  } */
+			</style>
+		<table>
+				<tr>
+					<th>구 분</th>
+					<th>점 검 사 항</th>
+				</tr>
+				<tr th:each="l : ${checkList}">
+					<td th:text="${l.inslistCla}"></td>
+					<td th:text="${l.inslistCon}"></td>
+				</tr>
+				
+		</table>
+	</th:block>
+<th:block layout:fragment="adminisscript">
+<th:block th:include="fragments/adminis/adminisscript"></th:block>
+
+</th:block>
+</html>

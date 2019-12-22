@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout/adminis/adminisdefault}">
+
+<th:block layout:fragment="adminisTitle">
+	<title>거래처회원리스트</title>
+</th:block>
+	<th:block layout:fragment="adminisMainContents">
+		
+		<h2>축제물품 대분류</h2>
+		
+		<table border="1px">
+	 	<tr>
+	 		<td>대분류코드</td>
+	 		<td>대분류명</td>
+	 		<td>수정</td>
+	 		<td>삭제</td>
+	 	</tr>
+	 	<tr th:each="l:${AllLDiv}"}>
+	 		<td th:text="${l.festgoods_ldiv_cd}"></td>
+	 		<td th:text="${l.festgoods_ldiv_nm}"></td>
+	 		<td><a>수정</a></td>
+	 		<td><a>삭제</a></td>
+
+	 	</tr>
+	 </table>
+	 
+	 
+		<h2>축제물품 중분류</h2>
+		
+		<table border="1px">
+	 	<tr>
+	 		<td>중분류코드</td>
+	 		<td>중분류명</td>
+	 		<td>수정</td>
+	 		<td>삭제</td>
+	 	</tr>
+	 	<tr th:each="m:${AllMDiv}"}>
+	 		<td th:text="${m.festgoods_mdiv_cd}"></td>
+	 		<td th:text="${m.festgoods_mdiv_nm}"></td>
+	 		<td><a>수정</a></td>
+	 		<td><a>삭제</a></td>
+
+	 	</tr>
+	 </table>
+	 
+	 
+		<h2>축제물품 소분류</h2>
+		
+		<table border="1px">
+	 	<tr>
+	 		<td>소분류코드</td>
+	 		<td>소분류명</td>
+	 		<td>수정</td>
+	 		<td>삭제</td>
+	 	</tr>
+	 	<tr th:each="s:${AllSDiv}"}>
+	 		<td th:text="${s.festgoods_sdiv_cd}"></td>
+	 		<td th:text="${s.festgoods_sdiv_nm}"></td>
+	 		<td><a>수정</a></td>
+	 		<td><a>삭제</a></td>
+
+	 	</tr>
+	 </table>
+		
+		
+		
+		
+		
+		
+		
+	</th:block>
+<th:block layout:fragment="adminisscript">
+<th:block th:include="fragments/adminis/adminisscript"></th:block>
+
+</th:block>
+</html>

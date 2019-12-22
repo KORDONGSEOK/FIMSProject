@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout/adminis/adminisdefault}">
+
+<th:block layout:fragment="adminisTitle">
+	<title>거래처회원리스트</title>
+</th:block>
+	<th:block layout:fragment="adminisMainContents">
+프로그램 참가자조회페이지 : 검색가능
+		<h2>프로그램 참가자 조회</h2>
+		
+		<table border="1px">
+	 	<tr>
+	 		<td>참가프로그램</td>
+	 		<td>참가명</td>
+	 		<td>이름</td>
+	 		<td>성별</td>
+	 		<td>나이</td>
+	 		<td>연락처</td>
+	 		<td>특이사항</td>
+	 		<td>등록일자</td>
+	 		<td>수정</td>
+	 		<td>삭제</td>
+	 	</tr>
+	 	<tr th:each="p:${AllParti}"}>
+	 		<td th:text="${p.fest_pro_cd}"></td>
+	 		<td th:text="${p.festpro_spro_cd}"></td>
+	 		<td th:text="${p.festpro_par_nm}"></td>
+	 		<td th:text="${p.festpro_par_gender}"></td>
+	 		<td th:text="${p.festpro_par_age}"></td>
+	 		<td th:text="${p.festpro_par_phone}"></td>
+	 		<td th:text="${p.festpro_par_etc}"></td>
+	 		<td th:text="${p.insert_dt}"></td>
+	 		<td><a>수정</a></td>
+	 		<td><a>삭제</a></td>
+
+	 	</tr>
+	 </table>
+<th:block layout:fragment="adminisscript">
+<th:block th:include="fragments/adminis/adminisscript"></th:block>
+
+</th:block>
+</html>

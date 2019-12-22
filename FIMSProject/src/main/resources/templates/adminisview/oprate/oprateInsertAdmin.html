@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout/adminis/adminisdefault}">
+
+<th:block layout:fragment="adminisTitle">
+	<title>관리자계정등록화면</title>
+</th:block>
+	<th:block layout:fragment="adminisMainContents">
+		<div class="col-md-12">
+			<div class="col-md-12">
+				<form action="#" class="form-horizontal style-form">
+					<div class="form-group">
+						<label class="control-label col-md-3">이름</label>
+						<input class="form-control form-control-inline input-medium default-date-picker" size="16" type="text">
+					</div>
+				</form>
+			</div>
+		</div>	
+	</th:block>
+<th:block layout:fragment="adminisscript">
+<th:block th:include="fragments/adminis/adminisscript"></th:block>
+
+</th:block>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layout/adminis/adminisdefault}">
+
+<th:block layout:fragment="adminisTitle">
+	<title>거래처회원리스트</title>
+</th:block>
+	<th:block layout:fragment="adminisMainContents">
+		모든축제별임시시설설치및철거관리리스트
+			<style>
+				  table {
+				    width: 100%;
+				    border-top: 1px solid #444444;
+				    border-collapse: collapse;
+				  }
+				  th, td {
+				    border-bottom: 1px solid #444444;
+				    padding: 10px;
+				    text-align: center;
+				  }
+				  th {
+				    background-color: #bbdefb;
+				  }
+				  td /* {
+				    background-color: #e3f2fd;
+				  } */
+			</style>
+			<table>
+				<tr>
+					<th>시설명</th>
+					<th>축제명</th>
+					<th>설치시작일</th>
+					<th>설치종료일</th>
+					<th>계약설치모델명</th>
+					<th>설치장소</th>
+					<th>설치개수</th>
+					<th>설치내용</th>
+					<th>근무인원</th>
+					<th>철거확인일자</th>
+					<th>철거확인자</th>
+					<th>담당자</th>
+					<th>설치상태1</th>
+					<th>설치상태2</th>
+					<th>수정</th>
+					<th>삭제</th>
+				</tr>
+				<tr th:each= "tl : ${temporaryList}">
+					<td th:text= "${tl.staNm}"></td>
+					<td th:text= "${tl.festNm}"></td>
+					<td th:text= "${tl.stastaDt}"></td>
+					<td th:text= "${tl.staendDt}"></td>
+					<td th:text= "${tl.stainsMo}"></td>
+					<td th:text= "${tl.stainsSc}"></td>
+					<td th:text= "${tl.stainsNum}"></td>
+					<td th:text= "${tl.stainsCon}"></td>
+					<td th:text= "${tl.staWorksta}"></td>
+					<td th:text= "${tl.stademDt}"></td>
+					<td th:text= "${tl.staChe}"></td>
+					<td th:text= "${tl.comNm2}"></td>
+					<td th:text= "${tl.stainsCon1}"></td>
+					<td th:text= "${tl.stainsCon2}"></td>
+					<td>
+						<a th:href="@{/temporaryUpdate}">수정</a>
+					</td>
+					<td>
+						<a th:href="@{/temporaryDelete}">삭제</a>
+					</td>				
+				</tr>
+			</table>
+	</th:block>
+<th:block layout:fragment="adminisscript">
+<th:block th:include="fragments/adminis/adminisscript"></th:block>
+
+</th:block>
+</html>
