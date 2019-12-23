@@ -33,4 +33,18 @@ public class RevExpBudgetController {
 		System.out.println("---세입세출예산리스트 : revExpBudgetList 메서드 RevExpBudgetController.java---");
 		return"adminisview/budget/revExpBudgetList";
 	}
+	
+	/**
+	 * @param 없음
+	 * @file RevExpBudgetController.java
+	 * @name ExpEntBudgetView
+	 * @brief 세출현황 -> 사업 및 예산정보
+	 * @author ksmart33 김동석
+	 * @return adminisview/budget/expEntBudgetView
+	 */
+	@GetMapping("/adminisview/budget/expEntBudgetView")
+	public String ExpEntBudgetView() {
+		System.out.println("---세출현황 -> 사업 및 예산정보 : ExpEntBudgetView 메서드 RevExpBudgetController.java---");
+		return"adminisview/budget/expEntBudgetView";
+	}
 }
