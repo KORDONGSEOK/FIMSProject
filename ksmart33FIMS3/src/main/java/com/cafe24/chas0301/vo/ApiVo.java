@@ -6,7 +6,7 @@ public class ApiVo {
 	
 	// http://api.visitkorea.or.kr/openapi/service/rest/RusService/detailCommon
 	//공통정보조회 detailCommon 
-	String 	serviceKey; //공공데이터포털에서 발급받은 인증키
+	String 	serviceKey = "ZHe7knpFjmDZZ%2B1WbSjdX6Tk2m3J62sy9nh4s0uObfESC7biJOnf3QyibxQPTIjTNfiOcA4MIzdSIkZmze96zg%3D%3D"; //공공데이터포털에서 발급받은 인증키
 	
 	String 	numOfRows; //한 페이지 결과 수
 	
@@ -89,13 +89,287 @@ public class ApiVo {
 	//http://api.visitkorea.or.kr/openapi/service/rest/RusService/searchKeyword
 	//키워드조회 searchKeyword
 	String keyword; //검색 요청할 키워드
-	
+
 	//http://api.visitkorea.or.kr/openapi/service/rest/RusService/categoryCode
 	//서비스분류코드조회 categoryCode
 	
 	//http://api.visitkorea.or.kr/openapi/service/rest/RusService/areaCode
 	//지역코드조회 areaCode
 
+	
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getServiceKey() {
+		return serviceKey;
+	}
+
+	public void setServiceKey(String serviceKey) {
+		this.serviceKey = serviceKey;
+	}
+
+	public String getNumOfRows() {
+		return numOfRows;
+	}
+
+	public void setNumOfRows(String numOfRows) {
+		this.numOfRows = numOfRows;
+	}
+
+	public String getPageNo() {
+		return pageNo;
+	}
+
+	public void setPageNo(String pageNo) {
+		this.pageNo = pageNo;
+	}
+
+	public String getMobileOS() {
+		return mobileOS;
+	}
+
+	public void setMobileOS(String mobileOS) {
+		this.mobileOS = mobileOS;
+	}
+
+	public String getMobileApp() {
+		return mobileApp;
+	}
+
+	public void setMobileApp(String mobileApp) {
+		this.mobileApp = mobileApp;
+	}
+
+	public String getContentId() {
+		return contentId;
+	}
+
+	public void setContentId(String contentId) {
+		this.contentId = contentId;
+	}
+
+	public String getContentTypeId() {
+		return contentTypeId;
+	}
+
+	public void setContentTypeId(String contentTypeId) {
+		this.contentTypeId = contentTypeId;
+	}
+
+	public String getDefaultYN() {
+		return defaultYN;
+	}
+
+	public void setDefaultYN(String defaultYN) {
+		this.defaultYN = defaultYN;
+	}
+
+	public String getFirstImageYN() {
+		return firstImageYN;
+	}
+
+	public void setFirstImageYN(String firstImageYN) {
+		this.firstImageYN = firstImageYN;
+	}
+
+	public String getAreacodeYN() {
+		return areacodeYN;
+	}
+
+	public void setAreacodeYN(String areacodeYN) {
+		this.areacodeYN = areacodeYN;
+	}
+
+	public String getCatcodeYN() {
+		return catcodeYN;
+	}
+
+	public void setCatcodeYN(String catcodeYN) {
+		this.catcodeYN = catcodeYN;
+	}
+
+	public String getAddrinfoYN() {
+		return addrinfoYN;
+	}
+
+	public void setAddrinfoYN(String addrinfoYN) {
+		this.addrinfoYN = addrinfoYN;
+	}
+
+	public String getMapinfoYN() {
+		return mapinfoYN;
+	}
+
+	public void setMapinfoYN(String mapinfoYN) {
+		this.mapinfoYN = mapinfoYN;
+	}
+
+	public String getOverviewYN() {
+		return overviewYN;
+	}
+
+	public void setOverviewYN(String overviewYN) {
+		this.overviewYN = overviewYN;
+	}
+
+	public String getTransGuideYN() {
+		return transGuideYN;
+	}
+
+	public void setTransGuideYN(String transGuideYN) {
+		this.transGuideYN = transGuideYN;
+	}
+
+	public String getImageYN() {
+		return imageYN;
+	}
+
+	public void setImageYN(String imageYN) {
+		this.imageYN = imageYN;
+	}
+
+	public String getSubImageYN() {
+		return subImageYN;
+	}
+
+	public void setSubImageYN(String subImageYN) {
+		this.subImageYN = subImageYN;
+	}
+
+	public String getListYN() {
+		return listYN;
+	}
+
+	public void setListYN(String listYN) {
+		this.listYN = listYN;
+	}
+
+	public String getArrange() {
+		return arrange;
+	}
+
+	public void setArrange(String arrange) {
+		this.arrange = arrange;
+	}
+
+	public String getMapX() {
+		return mapX;
+	}
+
+	public void setMapX(String mapX) {
+		this.mapX = mapX;
+	}
+
+	public String getMapY() {
+		return mapY;
+	}
+
+	public void setMapY(String mapY) {
+		this.mapY = mapY;
+	}
+
+	public String getRadius() {
+		return radius;
+	}
+
+	public void setRadius(String radius) {
+		this.radius = radius;
+	}
+
+	public String getAreaCode() {
+		return areaCode;
+	}
+
+	public void setAreaCode(String areaCode) {
+		this.areaCode = areaCode;
+	}
+
+	public String getSigunguCode() {
+		return sigunguCode;
+	}
+
+	public void setSigunguCode(String sigunguCode) {
+		this.sigunguCode = sigunguCode;
+	}
+
+	public String getCat1() {
+		return cat1;
+	}
+
+	public void setCat1(String cat1) {
+		this.cat1 = cat1;
+	}
+
+	public String getCat2() {
+		return cat2;
+	}
+
+	public void setCat2(String cat2) {
+		this.cat2 = cat2;
+	}
+
+	public String getCat3() {
+		return cat3;
+	}
+
+	public void setCat3(String cat3) {
+		this.cat3 = cat3;
+	}
+
+	public String getHanOk() {
+		return hanOk;
+	}
+
+	public void setHanOk(String hanOk) {
+		this.hanOk = hanOk;
+	}
+
+	public String getBenikia() {
+		return benikia;
+	}
+
+	public void setBenikia(String benikia) {
+		this.benikia = benikia;
+	}
+
+	public String getGoodStay() {
+		return goodStay;
+	}
+
+	public void setGoodStay(String goodStay) {
+		this.goodStay = goodStay;
+	}
+
+	public String getEventStartDate() {
+		return eventStartDate;
+	}
+
+	public void setEventStartDate(String eventStartDate) {
+		this.eventStartDate = eventStartDate;
+	}
+
+	public String getEventEndDate() {
+		return eventEndDate;
+	}
+
+	public void setEventEndDate(String eventEndDate) {
+		this.eventEndDate = eventEndDate;
+	}
+
+	public String getKeyword() {
+		return keyword;
+	}
+
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+	
+	
 	
 	
 	
