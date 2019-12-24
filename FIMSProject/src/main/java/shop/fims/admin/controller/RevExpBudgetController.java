@@ -23,6 +23,20 @@ public class RevExpBudgetController {
 	/**
 	 * @param 없음
 	 * @file RevExpBudgetController.java
+	 * @name advancetable
+	 * @brief 세입세출예산화면
+	 * @author ksmart33 김동석
+	 * @return adminisview/budget/advancetable
+	 */
+	@GetMapping("/adminisview/budget/advancetable")
+	public String advancetable() {
+		System.out.println("---세입세출예산화면 : advancetable 메서드 RevExpBudgetController.java---");
+		return"adminisview/budget/advancetable";
+	}
+	
+	/**
+	 * @param 없음
+	 * @file RevExpBudgetController.java
 	 * @name revExpBudgetList
 	 * @brief 세입세출예산리스트
 	 * @author ksmart33 김동석
@@ -43,7 +57,7 @@ public class RevExpBudgetController {
 	 * @return adminisview/budget/expEntBudgetView
 	 */
 	@GetMapping("/adminisview/budget/expEntBudgetView")
-	public String ExpEntBudgetView() {
+	public String expEntBudgetView() {
 		System.out.println("---세출현황 -> 사업 및 예산정보 : ExpEntBudgetView 메서드 RevExpBudgetController.java---");
 		return"adminisview/budget/expEntBudgetView";
 	}

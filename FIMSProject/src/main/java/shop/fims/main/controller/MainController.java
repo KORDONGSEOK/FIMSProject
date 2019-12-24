@@ -21,6 +21,8 @@ public class MainController {
 		return "index";
 	}
 	
+	
+	
 	/**
 	 * @param 없음
 	 * @file MainController.java
@@ -104,6 +106,5 @@ public class MainController {
 		System.out.println("---관리자모드로 로그인된 프로필화면(권한 : 공무원/거래처) : allprofile MainController.java-------");
 		return "adminisview/adminisprofile/allprofile";
 	}
-
 
 }
