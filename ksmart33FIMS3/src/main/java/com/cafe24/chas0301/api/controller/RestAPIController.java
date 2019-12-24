@@ -22,7 +22,7 @@ public class RestAPIController {
 	
 	@RequestMapping(value ="/api/{type}")
 	public JSONObject apiCall(@PathVariable String type,@RequestBody(required = false) ApiVo apiVo) throws IOException, ParseException {
-		if(apiVo==null)apiVo = new ApiVo();
+		if(apiVo==null) return null;
 		apiVo.setType(type);
 		return apiService.call(apiVo);		
 	}
