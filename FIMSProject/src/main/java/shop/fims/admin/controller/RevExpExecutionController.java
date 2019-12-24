@@ -47,4 +47,18 @@ public class RevExpExecutionController {
 		System.out.println("---세출현황->지출정보 : expExecutionView 메서드 RevExpExecutionController.java---");
 		return "adminisview/execution/expExecutionView";
 	}
+	
+	/**
+	 * @param 없음
+	 * @file RevExpExecutionController.java
+	 * @name fundManStatusView
+	 * @brief 자금운용상태
+	 * @author ksmart33 김동석
+	 * @return adminisview/execution/expExecutionView
+	 */
+	@GetMapping("/adminisview/execution/fundManStatusView")
+	public String fundManStatusView() {
+		System.out.println("---자금운용상태 : fundManStatusView 메서드 RevExpExecutionController.java---");
+		return "adminisview/execution/fundManStatusView";
+	}
 }

@@ -32,7 +32,7 @@
 <!--<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1"> -->
 
 <title>
-남원시-세입세출재정정보공개시스템</title>
+축제통합관리시스템</title>
 </head>
 <body>
 <header>
@@ -47,8 +47,8 @@
     <ul>
 
     		<!--<li style="color:#efefef;" class="jest"><a href="http://www.jeongeup.go.kr/index.jeongeup?menuCd=DOM_000000104007003000" title='홈으로이동'>정읍시에 바란다</a></li>-->
-		<li style="color:#efefef;"><a href="#" title='홈으로이동'>HOME</a></li>
-	<li ><a href="#" title='남원시 홈페이지로 이동'  target='_blank'>남원시 홈페이지</a></li>
+		<li style="color:#efefef;"><a href="/adminisview/dashboard" title='관리자 홈페이지로 이동'>!관리자 홈페이지</a></li>
+	<li ><a href="/gukminview/index" title='축제 홈페이지로 이동'  target='_blank'>!축제 홈페이지</a></li>
 
 	</ul>
   </div>
@@ -63,9 +63,9 @@
 <nav>
    <div id="navW">
 		<div class="sub_logo">
-		  <a href="#">
+		  <a href="/adminisview/budget/revExpBudgetView">
 			<img src="/gukmin/assets/images/fimslog.jpg" alt='홈으로이동' title='홈으로이동'>
-			<span title='세입세출재정정보공개시스템'>세입·세출재정정보공개시스템</span>
+			<span title='세입세출재정정보공개시스템'>!세입·세출재정정보공개시스템</span>
 		  </a>
 		</div>
 
@@ -78,12 +78,12 @@
 
             <input type="checkbox" id="toggle"/>
 			<ul class="clearfix" id="nav">
-							    <li><a href="./eBudgetList102.html" class="menu0" title='자금운용현황'>자금운용현황</a></li>
+							    <li><a href="/adminisview/execution/fundManStatusView" class="menu0" title='자금운용현황'>!자금운용현황</a></li>
 				
-				<li><a href="./eBudgetList101.html" class="menu1" title='세입현황'>세입현황</a></li>
+				<li><a href="/adminisview/budget/revBudgetView" class="menu1" title='세입현황'>!세입현황</a></li>
 				<li>
-				<a href='./eBudgetList201.html' class='menu2' title='세출현황'>세출현황</a></li>
-				<li><a href='//www.namwon.go.kr/index.do?menuCd=DOM_000000204007011000' class='menu3' target='_blank'  title='세입세출예산'>세입·세출예산</a></li><li><a href='//www.namwon.go.kr/index.do?menuCd=DOM_000000204010012000' class='menu4' target='_blank'  title='세입세출결산'>세입·세출결산</a></li>			  </ul>
+				<a href='/adminisview/execution/revExpExecutionView' class='menu2' title='세출현황'>!세출현황</a></li>
+				<li><a href='#' class='menu3' target='_blank'  title='세입세출예산'>#세입·세출예산</a></li><li><a href='#' class='menu4' target='_blank'  title='세입세출결산'>#세입·세출결산</a></li>			  </ul>
 		 </div><!--.sub_menu-->
 
 		 </div><!--navW-->
@@ -114,7 +114,7 @@
 <div id="sub_title">예산집행현황</div>
 <div id="sub_menu">
 	<ul>
-	<li><a href="./eBudgetList201.html"  class="tab1" title='예산집행현황'>예산집행현황</a></li>	<li><a href="./eBudgetList202.html" title='사업 및 예산정보'>사업 및 예산정보</a></li>	<li><a href="./eBudgetList203.html" title='지출정보'>지출정보</a></li>    	</ul>
+	<li><a href="/adminisview/execution/revExpExecutionView" title='예산집행현황'>!예산집행현황</a></li>	<li><a href="/adminisview/budget/expEntBudgetView" class="tab2" title='사업 및 예산정보'>!사업 및 예산정보</a></li>	<li><a href="/adminisview/execution/expExecutionView" title='지출정보'>!지출정보</a></li>    	</ul>
 </div>
 
 <div id="ex">
@@ -125,9 +125,10 @@
 
 <div id="search_table">
 	<!-- 검색항목출력 폼 -->
-	<form name="board_form" method="post" action="./eBudgetList201.html?mode=search&code=201"> 	
+<!-- 	<form name="board_form" method="post" action="./eBudgetList201.html?mode=search&code=201"> 	 -->
+	<form name="board_form" method="post" action="#"> 	
 		<table>
-		<caption>예산집행현황 검색</caption>
+		<caption>#예산집행현황 검색</caption>
 			<tr>
 				<th scope="col">회계년도</th><td><label for='select'>년도선택</label><select name='year' title='년도선택' id='select'><option value='2019'>2019</option><option value='2018'>2018</option><option value='2017'>2017</option><option value='2016'>2016</option><option value='2015'>2015</option><option value='2014'>2014</option> </select></td>
 				<th scope="col">기간</th>
@@ -149,7 +150,7 @@
 <div id="list_wrap">
 <span class="ex_2">(단위 : 원)</span>
   <table id="list_table" class="page201">
-  <caption>예산집행현황</caption>
+  <caption>#예산집행현황</caption>
 	<thead>
 		<tr>
 			<th scope="col" rowspan="2" class="numeric">분야별</th>
@@ -201,6 +202,7 @@
  </div>
 
 
+
  <footer>
    
    <div id="footer">
@@ -208,9 +210,9 @@
       <ul>
 		  <li class="count">
 		  		  </li>
-         <li class="logo2"><img src="//gyeyak.namwon.go.kr/ebudget/img/copylogo.png" alt="�ΰ�" title='�ΰ�'></li>
+         <li class="logo2"><img src="/gukmin/assets/images/fimslog.jpg" alt="축제통합관리시스템" title='축제통합관리시스템'></li>
 	     <li class="address">
-			 [55738] 전라북도 남원시 시청로 60<br>Tel. 063) 620-6114 Fax. 063) 633-0444<br>Copyright ⓒ NAMWON CITY. All Rights Reserved.<br>          </li>
+			 전라북도 전주시 덕진구 기린대로 446<br>Tel. 063) 1212-1004 Fax. 063) 1212-1005<br>Copyright ⓒ NAMWON CITY. All Rights Reserved.<br>          </li>
 
         </ul>
     </div>
