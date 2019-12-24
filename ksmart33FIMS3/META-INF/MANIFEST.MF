@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ksmart33FIMS3
+Bundle-SymbolicName: ksmart33FIMS3
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.cafe24.chas0301,
+ com.cafe24.chas0301.admin.controller,
+ com.cafe24.chas0301.admin.mapper,
+ com.cafe24.chas0301.admin.service,
+ com.cafe24.chas0301.api.Service,
+ com.cafe24.chas0301.api.controller,
+ com.cafe24.chas0301.main.controller,
+ com.cafe24.chas0301.vo

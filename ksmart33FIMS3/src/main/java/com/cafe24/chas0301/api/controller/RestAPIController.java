@@ -3,6 +3,8 @@ package com.cafe24.chas0301.api.controller;
 
 import java.io.IOException;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,8 +21,9 @@ public class RestAPIController {
 	
 	
 	@RequestMapping(value ="/api/{type}")
-	public ApiVo apiCall(@PathVariable String type,@RequestBody ApiVo apiVo) throws IOException{
-		
+	public JSONObject apiCall(@PathVariable String type,@RequestBody(required = false) ApiVo apiVo) throws IOException, ParseException {
+		if(apiVo==null)apiVo = new ApiVo();
+		apiVo.setType(type);
 		return apiService.call(apiVo);		
 	}
 }

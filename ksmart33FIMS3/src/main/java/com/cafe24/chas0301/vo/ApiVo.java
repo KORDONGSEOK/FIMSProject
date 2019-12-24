@@ -1,12 +1,15 @@
 package com.cafe24.chas0301.vo;
 
+import lombok.Data;
+
+@Data
 public class ApiVo {
 
 	String type;
 	
 	// http://api.visitkorea.or.kr/openapi/service/rest/RusService/detailCommon
 	//공통정보조회 detailCommon 
-	String 	serviceKey = "ZHe7knpFjmDZZ%2B1WbSjdX6Tk2m3J62sy9nh4s0uObfESC7biJOnf3QyibxQPTIjTNfiOcA4MIzdSIkZmze96zg%3D%3D"; //공공데이터포털에서 발급받은 인증키
+	String 	serviceKey; //공공데이터포털에서 발급받은 인증키
 	
 	String 	numOfRows; //한 페이지 결과 수
 	
@@ -89,14 +92,13 @@ public class ApiVo {
 	//http://api.visitkorea.or.kr/openapi/service/rest/RusService/searchKeyword
 	//키워드조회 searchKeyword
 	String keyword; //검색 요청할 키워드
-
+	
 	//http://api.visitkorea.or.kr/openapi/service/rest/RusService/categoryCode
 	//서비스분류코드조회 categoryCode
 	
 	//http://api.visitkorea.or.kr/openapi/service/rest/RusService/areaCode
 	//지역코드조회 areaCode
 
-	
 	public String getType() {
 		return type;
 	}
@@ -368,6 +370,7 @@ public class ApiVo {
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
+
 	
 	
 	
